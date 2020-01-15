@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-    printf("\n \n \n \nMAIN MENU \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
+    printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
 
     int choix;
     char name[20];
@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
         printf("Please enter your name\n");
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
+
     }
 
     if (choix == 2)
@@ -45,6 +46,6 @@ int player ()
 
 int monster()
 {
-
+//\n
 }
 
