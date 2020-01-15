@@ -33,12 +33,17 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-int donjon()
+int map()
 {
 
 }
 
 int player ()
+{
+
+}
+
+int monster()
 {
 
 }
