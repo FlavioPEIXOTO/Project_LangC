@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
 
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         printf("Please enter your name\n");
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
-
+        map();
     }
 
     if (choix == 2)
@@ -34,13 +34,43 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-int map()
+void map() //Création de la liste bidimensionnel
+{
+    int tableau[10][10];
+    int i;
+    for (i = 0 ; i < 10 ; i++)
+    {
+        int j;
+        for (j = 0 ; j < 10 ; j++)
+        {
+            tableau[i][j] = 0;
+            printf("%d | ", tableau[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void player () //joueur et sa position
 {
 
 }
 
-int player ()
+void ennemi () //Si case ennemi , combat lancé (+parametre ennemi)
 {
 
 }
 
+void attack () //Si combat, commandes d'attaque (+parametre attaque)
+{
+
+}
+
+void coffre () //Si case coffre, objet dans coffre
+{
+
+}
+
+void boss () // SI case boss , déclenchement combat (+parametre boss)
+{
+
+}
