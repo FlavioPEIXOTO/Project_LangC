@@ -4,11 +4,11 @@
 void main(int argc, char *argv[])
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
+    printf("Type 1, 2, 3, or 4\n");
 
     int choix;
     char name[20];
     scanf("%d", &choix);
-
     if (choix == 1)
     {
         printf("Please enter your name\n");
