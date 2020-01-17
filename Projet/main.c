@@ -9,11 +9,17 @@ void main(int argc, char *argv[])
     int choix;
     char name[20];
     scanf("%d", &choix);
+    /*SDL_Event event;
+    printf("help type h");
+    if (SDKL_h)
+    {
+        printf("help");
+    }*/
     if (choix == 1)
     {
         printf("Please enter your name\n");
         scanf("%s", &name);
-        printf("You are in a forest surronded by trees %s\n ", name);
+        printf("You are in a forest surronded by trees, %s\n ", name);
         map();
     }
 
@@ -37,8 +43,7 @@ void main(int argc, char *argv[])
 void map() //Création de la liste bidimensionnel
 {
     int tableau[10][10];
-    int i;
-    for (i = 0 ; i < 10 ; i++)
+    for (int i = 0 ; i < 10 ; i++)
     {
         int j;
         for (j = 0 ; j < 10 ; j++)
@@ -55,7 +60,7 @@ void player () //joueur et sa position
 
 }
 
-void ennemi () //Si case ennemi , combat lancé (+parametre ennemi)
+void monster () //Si case ennemi , combat lancé (+parametre ennemi)
 {
 
 }
@@ -71,6 +76,11 @@ void coffre () //Si case coffre, objet dans coffre
 }
 
 void boss () // SI case boss , déclenchement combat (+parametre boss)
+{
+
+}
+
+void help ()
 {
 
 }
