@@ -60,7 +60,7 @@ void map(int height, int width) //Création de la liste bidimensionnel
             tableau [6][7] = 4;
             // BOSS = 5
             tableau [5][9] = 5;
-            printf("%d | ", tableau[i][j]);
+            printf(" %d  | ", tableau[i][j]);
         }
         printf("\n");
     }
@@ -122,7 +122,7 @@ void player (int tableau[height][width]) //joueur et sa position
     printf ("%d | ", tableau[x][y]);
 }
 
-void ennemi () //Si case ennemi , combat lancé (+parametre ennemi)
+void monster () //Si case ennemi , combat lancé (+parametre ennemi)
 {
 
 }
@@ -138,6 +138,11 @@ void coffre () //Si case coffre, objet dans coffre
 }
 
 void boss () // SI case boss , déclenchement combat (+parametre boss)
+{
+
+}
+
+void help ()
 {
 
 }
