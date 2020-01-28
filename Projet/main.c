@@ -1,18 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "map.h"
 //Taille du tableau
 int height = 10;
 int width = 10;
 
-void main(int argc, char *argv[])
+void main() //Creation du menu
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
     printf("Type 1, 2, 3, or 4\n");
 
+    /*SDL_Event event;
+    printf("help type h");
+    if (SDKL_h)
+    {
+        printf("help");
+    }*/
+
     int choix;
     char name[20];
     scanf("%d", &choix);
+
     if (choix == 1)
     {
         printf("Please enter your name\n");
@@ -22,66 +30,41 @@ void main(int argc, char *argv[])
         player();
     }
 
-    if (choix == 2)
+    else if (choix == 2)
     {
         printf("Chargement de votre sauvegarde\n");
     }
 
-    if (choix == 3)
+    else if (choix == 3)
     {
         printf("Les règles\n");
     }
 
-    if (choix == 4)
+    else if (choix == 4)
     {
         system("exit");
+    }
+    else{
+        printf("Please type 1, 2, 3, or 4");
+        main();
     }
     return 0;
 }
 
-void map(int height, int width) //Création de la liste bidimensionnel
-{
-    int tableau[height][width];
-    int i; // Lignes
-    int j;
-    for (i = 0 ; i < height ; i++)
-    {
-         // Colonnes
-        for (j = 0 ; j < width ; j++)
-        {
-            tableau[i][j] = 0;
-            // Player = 1
-            tableau [0][0] = 1;
-            //Monstres = 2
-            tableau [2][1] = 2; tableau [4][3] = 2;
-            // Coffres = 3
-            tableau [1][2] = 3;
-            // Enigmes = 4
-            tableau [6][7] = 4;
-            // BOSS = 5
-            tableau [5][9] = 5;
-            printf(" %d  | ", tableau[i][j]);
-        }
-        printf("\n");
-    }
-    return tableau;
-}
-
 void player (int tableau[height][width]) //joueur et sa position
 {
-
-    int x;
-    int y;
-    for (x = 0 ; x < height ; x++)
+    int x = 0;
+    int y = 0;
+    for (x ; x < height ; x++)
     {
-        for (y = 0 ; y < width ; y++)
+        for (y ; y < width ; y++)
         {
             printf("toto");
-            if (tableau[x][y] == 1)
+            if (tableau[height][width] == 1)
             {
                 int move;
                 scanf("%d", &move);
-                printf("testtoto");
+                printf("un nombre inferieur ou egal a 4");
                 if (move == 1)
                 {
                     printf("test");
@@ -118,7 +101,7 @@ void player (int tableau[height][width]) //joueur et sa position
 
         }
     }
-    printf("toto");
+    printf("test_final");
     printf ("%d | ", tableau[x][y]);
 }
 
@@ -143,6 +126,11 @@ void boss () // SI case boss , déclenchement combat (+parametre boss)
 }
 
 void help ()
+{
+
+}
+
+void regle()
 {
 
 }
