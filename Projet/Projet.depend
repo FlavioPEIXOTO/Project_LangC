@@ -1,9 +1,13 @@
 # depslib dependency file v1.0
-1579171587 source:c:\users\flavi\onedrive\documents\langage c\projet\projet\main.c
+1579249623 source:c:\users\flavi\onedrive\documents\langage c\projet\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 
-1579249685 source:c:\users\tom\desktop\test_c_git\projet\main.c
+1579256536 source:c:\users\tom\desktop\test_c_git\projet\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1579256960 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 

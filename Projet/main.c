@@ -21,6 +21,7 @@ void main(int argc, char *argv[])
         scanf("%s", &name);
         printf("You are in a forest surronded by trees, %s\n ", name);
         map();
+        player();
     }
 
     if (choix == 2)
@@ -43,19 +44,31 @@ void main(int argc, char *argv[])
 void map() //Création de la liste bidimensionnel
 {
     int tableau[10][10];
-    for (int i = 0 ; i < 10 ; i++)
+    int i; // Lignes
+    for (i = 0 ; i < 10 ; i++)
     {
-        int j;
+        int j; // Colonnes
         for (j = 0 ; j < 10 ; j++)
         {
             tableau[i][j] = 0;
+            // Player = 1
+            tableau [0][0] = 1;
+            //Monstres = 2
+            tableau [2][1] = 2; tableau [4][3] = 2;
+            // Coffres = 3
+            tableau [1][2] = 3;
+            // Enigmes = 4
+            tableau [6][7] = 4;
+            // BOSS = 5
+            tableau [5][9] = 5;
             printf("%d | ", tableau[i][j]);
         }
         printf("\n");
     }
+    return tableau;
 }
 
-void player () //joueur et sa position
+void player () //joueur et sa position (deplacement)
 {
 
 }
@@ -80,7 +93,8 @@ void boss () // SI case boss , déclenchement combat (+parametre boss)
 
 }
 
-void help ()
+void help () //Commande help
 {
 
 }
+
