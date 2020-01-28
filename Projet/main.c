@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Taille du tableau
+int height = 10;
+int width = 10;
+
 void main(int argc, char *argv[])
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
@@ -14,7 +18,7 @@ void main(int argc, char *argv[])
         printf("Please enter your name\n");
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
-        map();
+        map(height, width);
         player();
     }
 
@@ -35,14 +39,15 @@ void main(int argc, char *argv[])
     return 0;
 }
 
-void map() //Création de la liste bidimensionnel
+void map(int height, int width) //Création de la liste bidimensionnel
 {
-    int tableau[10][10];
+    int tableau[height][width];
     int i; // Lignes
-    for (i = 0 ; i < 10 ; i++)
+    int j;
+    for (i = 0 ; i < height ; i++)
     {
-        int j; // Colonnes
-        for (j = 0 ; j < 10 ; j++)
+         // Colonnes
+        for (j = 0 ; j < width ; j++)
         {
             tableau[i][j] = 0;
             // Player = 1
@@ -62,9 +67,59 @@ void map() //Création de la liste bidimensionnel
     return tableau;
 }
 
-void player () //joueur et sa position
+void player (int tableau[height][width]) //joueur et sa position
 {
 
+    int x;
+    int y;
+    for (x = 0 ; x < height ; x++)
+    {
+        for (y = 0 ; y < width ; y++)
+        {
+            printf("toto");
+            if (tableau[x][y] == 1)
+            {
+                int move;
+                scanf("%d", &move);
+                printf("testtoto");
+                if (move == 1)
+                {
+                    printf("test");
+                    tableau[x][y] = 0;
+                    tableau[x][y+1] = 1;
+                    printf ("%d | ", tableau[x][y]);
+                }
+
+                if (move == 2)
+                {
+                    printf("test2");
+                    tableau[x][y] = 0;
+                    tableau [x+1][y] = 1;
+                    printf ("%d | ", tableau[x][y]);
+                }
+
+                if (move == 3)
+                {
+                    printf("test3");
+                    tableau[x][y] = 0;
+                    tableau [x-1][y] = 1;
+                    printf ("%d | ", tableau[x][y]);
+                }
+
+                if (move == 4)
+                {
+                    printf("test4");
+                    tableau[x][y] = 0;
+                    tableau[x][y-1] = 1;
+                    printf ("%d | ", tableau[x][y]);
+                }
+
+            }
+
+        }
+    }
+    printf("toto");
+    printf ("%d | ", tableau[x][y]);
 }
 
 void ennemi () //Si case ennemi , combat lancé (+parametre ennemi)
