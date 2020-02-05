@@ -2,6 +2,7 @@ int height = 10;
 int width = 10;
 void player (int tableau[height][width]) //joueur et sa position
 {
+
     int x = 0;
     int y = 0;
     for (x ; x < height ; x++)

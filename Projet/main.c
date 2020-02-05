@@ -6,7 +6,7 @@
 //Taille du tableau
 
 
-void main() //Creation du menu
+int main() //Creation du menu
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
     printf("Type 1, 2, 3, or 4\n");
@@ -54,32 +54,32 @@ void main() //Creation du menu
 
 
 
-void monster () //Si case ennemi , combat lancé (+parametre ennemi)
+int monster () //Si case ennemi , combat lancé (+parametre ennemi)
 {
 
 }
 
-void attack () //Si combat, commandes d'attaque (+parametre attaque)
+int attack () //Si combat, commandes d'attaque (+parametre attaque)
 {
 
 }
 
-void coffre () //Si case coffre, objet dans coffre
+int coffre () //Si case coffre, objet dans coffre
 {
 
 }
 
-void boss () // SI case boss , déclenchement combat (+parametre boss)
+int boss () // SI case boss , déclenchement combat (+parametre boss)
 {
 
 }
 
-void help ()
+int help ()
 {
 
 }
 
-void regle()
+int regle()
 {
 
 }
