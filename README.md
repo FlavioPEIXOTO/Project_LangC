@@ -1,29 +1,29 @@
 #Project_LangC
 
-Pour étudier le code directement sur git --> main.c
+Pour etudier le code directement sur git --> main.c
 Pour ouvrir le code sur codeblock -->Project.cbp
 
 
-Répartition des tâches :
+Repartition des teches :
 
---> Fin de création de la map (quelques bugs)
+--> Fin de creation de la map (quelques bugs)
 
---> Player : Caractéristiques, mode combat, déplacements
+--> Player : Caracteristiques, mode combat, deplacements
 
---> Ennemie : Caractéristiques, mode combat
+--> Ennemie : Caracteristiques, mode combat
 
---> BOSS : Cractéristiques, mode combat
+--> BOSS : Cracteristiques, mode combat
 
---> Coffre et enigmes : Contenu aléatoire, rédaction des énigmes, rédaction des indices menant au boss, etc...
+--> Coffre et enigmes : Contenu aleatoire, redaction des enigmes, redaction des indices menant au boss, etc...
 
---> inventaire Player : intéractions, contenu
+--> inventaire Player : interactions, contenu
 
---> Arme : Caractéristiques
+--> Arme : Caracteristiques
 
---> Bonus: 	Rédaction d'une histoire de mise en situation
+--> Bonus: 	Redaction d'une histoire de mise en situation
 		Sons : Ajout de bon son
-		Salle secrète : Non définie sur la map
-		murs : (obligatoire car c sympa)
+		Salle secrete : Non definie sur la map
+		murs : (obligatoire car c'est sympa)
 		Mode deux joueurs
 		help
 		sauvegarde
