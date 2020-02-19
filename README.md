@@ -24,7 +24,7 @@ Répartition des tâches :
 		Sons : Ajout de bon son
 		Salle secrète : Non définie sur la map
 		murs : (obligatoire car c sympa)
-		Mode deux joueurs
+		Mode deux joueurs (mode coop pas trop RP)
 		help
 		sauvegarde
 		plusieurs armes

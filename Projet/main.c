@@ -3,10 +3,7 @@
 #include "map.h"
 #include "player.h"
 
-//Taille du tableau
-
-
-void main() //Creation du menu
+int main()
 {
     printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
     printf("Type 1, 2, 3, or 4\n");
@@ -27,8 +24,10 @@ void main() //Creation du menu
         printf("Please enter your name\n");
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
-        map(height, width);
-        player();
+
+        int m[10][10];
+        map(m,10,10);
+        player(m);
     }
 
     else if (choix == 2)
@@ -45,7 +44,8 @@ void main() //Creation du menu
     {
         system("exit");
     }
-    else{
+    else
+    {
         printf("Please type 1, 2, 3, or 4");
         main();
     }
@@ -54,32 +54,36 @@ void main() //Creation du menu
 
 
 
-void monster () //Si case ennemi , combat lancé (+parametre ennemi)
+int monster () //Si case ennemi , combat lancé (+parametre ennemi)
 {
+    return 0;
+}
+
+int attack () //Si combat, commandes d'attaque (+parametre attaque)
+{
+    return 0;
+}
+
+int coffre () //Si case coffre, objet dans coffre
+{
+    return 0;
 
 }
 
-void attack () //Si combat, commandes d'attaque (+parametre attaque)
+int boss () // SI case boss , déclenchement combat (+parametre boss)
 {
+    return 0;
 
 }
 
-void coffre () //Si case coffre, objet dans coffre
+int help ()
 {
+    return 0;
 
 }
 
-void boss () // SI case boss , déclenchement combat (+parametre boss)
+int regle()
 {
-
-}
-
-void help ()
-{
-
-}
-
-void regle()
-{
+    return 0;
 
 }
