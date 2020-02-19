@@ -7,16 +7,22 @@
 	<stdio.h>
 	<stdlib.h>
 
-1580209781 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
+1582105606 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	"map.h"
+	"player.h"
 
-1580209988 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+1582104910 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+	<stdio.h>
 
 1580209871 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\include\map.h
 
-1580209948 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
+1582104771 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
 
-1580900534 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+1582105138 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+	"player.h"
+	<stdio.h>
+
+1582105145 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
 

@@ -1,6 +1,9 @@
+#include "player.h"
+#include <stdio.h>
+
 int height = 10;
 int width = 10;
-void player (int tableau[height][width]) //joueur et sa position
+void player (int (*tableau)[10]) //joueur et sa position
 {
 
     int x = 0;

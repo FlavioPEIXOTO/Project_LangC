@@ -1,6 +1,10 @@
-void map(int height, int width) //Création de la liste bidimensionnel
+#include <stdio.h>
+
+int height = 10;
+int width = 10;
+void map( int (*tableau)[10] , int height, int width) //Création de la liste bidimensionnel
 {
-    int tableau[height][width];
+
     int i; // Lignes
     int j;
     for (i = 0 ; i < height ; i++)
@@ -23,6 +27,5 @@ void map(int height, int width) //Création de la liste bidimensionnel
         }
         printf("\n");
     }
-    return tableau;
 }
 

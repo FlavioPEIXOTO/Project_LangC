@@ -27,8 +27,11 @@ int main() //Creation du menu
         printf("Please enter your name\n");
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
-        map(height, width);
-        player();
+
+
+        //int m[10][10];
+        //map(m,10,10);
+        //player(m);
     }
 
     else if (choix == 2)
@@ -49,6 +52,7 @@ int main() //Creation du menu
         printf("Please type 1, 2, 3, or 4");
         main();
     }
+
     return 0;
 }
 
@@ -56,30 +60,30 @@ int main() //Creation du menu
 
 int monster () //Si case ennemi , combat lancé (+parametre ennemi)
 {
-
+    return 0;
 }
 
 int attack () //Si combat, commandes d'attaque (+parametre attaque)
 {
-
+    return 0;
 }
 
 int coffre () //Si case coffre, objet dans coffre
 {
-
+    return 0;
 }
 
 int boss () // SI case boss , déclenchement combat (+parametre boss)
 {
-
+    return 0;
 }
 
 int help ()
 {
-
+    return 0;
 }
 
 int regle()
 {
-
+    return 0;
 }
