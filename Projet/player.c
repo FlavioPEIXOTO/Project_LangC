@@ -1,8 +1,9 @@
-#include "player.h"
+#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
-
 int height = 10;
 int width = 10;
+
 void player (int (*tableau)[10]) //joueur et sa position
 {
 
@@ -49,6 +50,11 @@ void player (int (*tableau)[10]) //joueur et sa position
                     tableau[x][y-1] = 1;
                     printf ("%d | ", tableau[x][y]);
                 }
+                if (move == 7)
+                {
+                    printf("Ouverture de l'inventaire : ");
+                    //inventory();
+                }
 
             }
 
@@ -57,4 +63,3 @@ void player (int (*tableau)[10]) //joueur et sa position
     printf("test_final");
     printf ("%d | ", tableau[x][y]);
 }
-

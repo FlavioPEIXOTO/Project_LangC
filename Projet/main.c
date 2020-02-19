@@ -3,6 +3,7 @@
 #include "map.h"
 #include "player.h"
 
+
 //Taille du tableau
 
 
@@ -28,10 +29,9 @@ int main() //Creation du menu
         scanf("%s", &name);
         printf("You are in a forest surronded by trees %s\n ", name);
 
-
-        //int m[10][10];
-        //map(m,10,10);
-        //player(m);
+        int m[10][10];
+        map(m,10,10);
+        player(m);
     }
 
     else if (choix == 2)
@@ -48,7 +48,8 @@ int main() //Creation du menu
     {
         system("exit");
     }
-    else{
+    else
+    {
         printf("Please type 1, 2, 3, or 4");
         main();
     }
