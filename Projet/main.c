@@ -43,7 +43,7 @@ int main() //Creation du menu
 
     else if (choix == 3)
     {
-        printf("Les règles\n");
+        printf("Les regles\n");
     }
 
     else if (choix == 4)

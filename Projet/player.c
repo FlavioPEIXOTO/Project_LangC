@@ -13,15 +13,16 @@ void player (int (*tableau)[10]) //joueur et sa position
     {
         for (y ; y < width ; y++)
         {
-            printf("toto");
+            printf("toto\n");
             if (tableau[height][width] == 1)
+            printf("essaie\n");
             {
                 int move;
                 scanf("%d", &move);
-                printf("un nombre inferieur ou egal a 4");
+                printf("un nombre inferieur ou egal a 4\n");
                 if (move == 1)
                 {
-                    printf("test");
+                    printf("test\n");
                     tableau[x][y] = 0;
                     tableau[x][y+1] = 1;
                     printf ("%d | ", tableau[x][y]);
@@ -29,7 +30,7 @@ void player (int (*tableau)[10]) //joueur et sa position
 
                 if (move == 2)
                 {
-                    printf("test2");
+                    printf("test2\n");
                     tableau[x][y] = 0;
                     tableau [x+1][y] = 1;
                     printf ("%d | ", tableau[x][y]);
@@ -37,7 +38,7 @@ void player (int (*tableau)[10]) //joueur et sa position
 
                 if (move == 3)
                 {
-                    printf("test3");
+                    printf("test3\n");
                     tableau[x][y] = 0;
                     tableau [x-1][y] = 1;
                     printf ("%d | ", tableau[x][y]);
@@ -45,14 +46,14 @@ void player (int (*tableau)[10]) //joueur et sa position
 
                 if (move == 4)
                 {
-                    printf("test4");
+                    printf("test4\n");
                     tableau[x][y] = 0;
                     tableau[x][y-1] = 1;
                     printf ("%d | ", tableau[x][y]);
                 }
                 if (move == 7)
                 {
-                    printf("Ouverture de l'inventaire : ");
+                    printf("Ouverture de l'inventaire : \n");
                     //inventory();
                 }
 
@@ -60,6 +61,6 @@ void player (int (*tableau)[10]) //joueur et sa position
 
         }
     }
-    printf("test_final");
+    printf("test_final\n");
     printf ("%d | ", tableau[x][y]);
 }
