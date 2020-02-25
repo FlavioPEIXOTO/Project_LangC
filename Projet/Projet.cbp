@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ennemi.h" />
 		<Unit filename="inventaire.c">
 			<Option compilerVar="CC" />
 		</Unit>

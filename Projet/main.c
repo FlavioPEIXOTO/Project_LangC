@@ -11,7 +11,7 @@
 
 int main() //Creation du menu
 {
-    printf("\n \n \n \nMAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
+    printf("\n \n MAIN MENU\n \n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
     printf("Type 1, 2, 3, or 4\n");
 
     /*SDL_Event event;
@@ -44,11 +44,13 @@ int main() //Creation du menu
     else if (choix == 3)
     {
         printf("Les regles\n");
+        printf("Presentation de l'equipe");
     }
 
     else if (choix == 4)
     {
         system("exit");
+        printf("bye");
     }
     else
     {
@@ -83,10 +85,6 @@ int boss () // SI case boss , déclenchement combat (+parametre boss)
 
 int help ()
 {
-    return 0;
-}
-
-int regle()
-{
+    printf("Type 'help' if you need help");
     return 0;
 }

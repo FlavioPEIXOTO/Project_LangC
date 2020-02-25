@@ -1,20 +1,18 @@
-#ENNEMI.C
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int affichageMonstre(*pvEnnemi)
+void affichageMonstre(*pvEnnemi)
 {
-    printf("            /\---/\ /n");
-	printf("           (       ) /n");
-	printf("           ( @---@ ) /n");
-	printf("           (  ___  ) /n");
-	printf("             (   ) /n");
+    printf("            /\---/\ \n");
+	printf("           (       ) \n");
+	printf("           ( @---@ ) \n");
+	printf("           (  ___  ) \n");
+	printf("             (   ) \n");
 	printf("  ""======(         )=====""      \n");
-	printf("  ##      (         )     ##()  \n");
-	printf("          (  """""  )    / )   \n");
+	printf("  ##      (         )     ##      \n");
+	printf("          (  """""" )           \n");
 	printf("          (    #    )    / /   \n");
-	printf("          (  """"" )   / /   /n");
+	printf("          (  """""" )   / /   \n");
 	printf("          (         )  / /   /n");
 	printf("          (         ) / /   /n");
 	printf("          ~~~~~~~~~~~ /n");
@@ -30,27 +28,27 @@ int affichageMonstre(*pvEnnemi)
 
 void phraseEnnemie1()
 {
-	printf(" Te voilà %d",PlayerName);
+	printf(" Te voilà %s",PlayerName);
 }
 void phraseEnnemie2()
 {
-	printf(" Te voilà fini %d",PlayerName);
+	printf(" Te voilà fini %s",PlayerName);
 }
-void phraseEnnemie3()//si pvPlayer <= 1/3 pvPlayer debut alors 
+void phraseEnnemie3()//si pvPlayer <= 1/3 pvPlayer debut alors
 {
-	printf(" Exterminé %d",PlayerName); // if pvPlayer == 0
+	printf(" Exterminé %s",PlayerName); // if pvPlayer == 0
 	printf("GAME OVER !!! ");
 }
 void phraseEnnemie4()
 {
 	if (pvEnnemi == 0) {
-		printf(" Tu ne passeras pas %d on t'auras ",PlayerName);
+		printf(" Tu ne passeras pas %s on t'auras ",PlayerName);
 		// on supprime l'ennemi de la map
 		// Map[][]=0;
 		// on appelle map grace à la fonction de la map
 		// return Map;
 	}
-	
+
 }
 
 int attaqueMonstre(numberAttaque)// Number Attaque pourrait etre aleatoire pour qu'on ait pas choisir l'attaque de l'enemi
@@ -79,16 +77,13 @@ int attaqueMonstre(numberAttaque)// Number Attaque pourrait etre aleatoire pour 
 		printf("pv hero est maintenant de %d", *pvPlayer);
 		return affichageMonstre(*pvEnnemi);
 	}
-	
+
 }
 
-int Combat()// pour une attaque aleatoire ennemi
+void Combat()// pour une attaque aleatoire ennemi
 {
 	affichageMonstre(*pvEnnemi);// on affiche l'enneli pour le mode combat
 	printf("à vous d'attaquer \n");
-	
-	
-	
 }
 
 
