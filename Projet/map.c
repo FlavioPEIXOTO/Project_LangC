@@ -1,9 +1,9 @@
 #include <stdio.h>
-
-void map(int (*tableau)[10], int height, int width) //Création de la liste bidimensionnel
+int i; // Lignes
+int j;
+int map(int (*tableau)[10], int height, int width) //Création de la liste bidimensionnel
 {
-    int i; // Lignes
-    int j;
+
     for (i = 0 ; i < 10 ; i++)
     {
          // Colonnes
@@ -25,5 +25,6 @@ void map(int (*tableau)[10], int height, int width) //Création de la liste bidim
 
         printf("\n");
     }
+    return *tableau[10], height, width;
 }
 
