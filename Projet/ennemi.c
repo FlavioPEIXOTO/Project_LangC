@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "player.h"; // là se trouve la structure personneage
+#include <time.h>;  // pour rand
 
-void affichageMonstre(*pvEnnemi)
-{
+//l'affichage du mode combat
+int affichageMonstre1(Personnage){
     printf("            /\---/\ \n");
 	printf("           (       ) \n");
 	printf("           ( @---@ ) \n");
@@ -23,74 +25,113 @@ void affichageMonstre(*pvEnnemi)
 	printf("         /___|   |___\ /n");
 	printf(" /n");
 	printf(" /n");
-	printf("Point de vie ennemie %d, &pvEnnemi");
+	printf("Point de vie ennemie %d \n Point de vie Player %d : %s, &Ennemi.pv, Player.pv, Player.name");// print
 }
 
-void phraseEnnemie1()
-{
-	printf(" Te voilà %s",PlayerName);
-}
-void phraseEnnemie2()
-{
-	printf(" Te voilà fini %s",PlayerName);
-}
-void phraseEnnemie3()//si pvPlayer <= 1/3 pvPlayer debut alors
-{
-	printf(" Exterminé %s",PlayerName); // if pvPlayer == 0
-	printf("GAME OVER !!! ");
-}
-void phraseEnnemie4()
-{
-	if (pvEnnemi == 0) {
-		printf(" Tu ne passeras pas %s on t'auras ",PlayerName);
-		// on supprime l'ennemi de la map
-		// Map[][]=0;
-		// on appelle map grace à la fonction de la map
-		// return Map;
-	}
+// Je créer les valeurs ennemis (je ne sais pas si c'est necessaire de les mettre dans une fonction ou non ou les mettre dans la fonction combat
 
-}
+Personnage Player;
+Personnage Ennemi1;
+Personnage Ennemi2;
+// Pour les attaques il se peut que dans la fonction combat, l'ennemi puisse tirer aleatoirement une attaque
+//remplissage des valeurs
+// Ennemi1
+Ennemi1.pv = 50;
+Ennemi1.attaque1 = 10;
+Ennemi1.attaque2 = 15;
+Ennemi1.attaque3 = 20;
+Ennemi1.defense = 25;
+Ennemi1.name = "Chat_masque";
+// Ennemi2
+Ennemi2.pv = 150;
+Ennemi2.attaque1 = 15;
+Ennemi2.attaque2 = 30;
+Ennemi2.attaque3 = 35;
+Ennemi2.defense = Ennemi2.pv + 20;//Une sorte de regeneration de vie
+Ennemi2.name = "Omar_Simps";
+// Player
+//Player.pv = ;
+//Player.attaque1 = ;
+//Player.attaque2 = ;
+//Player.attaque3 = ;
+//Player.defense = ;
+//scanf("%s",&Player.name);//le joueur va entrer le nom de son player
 
-int attaqueMonstre(numberAttaque)// Number Attaque pourrait etre aleatoire pour qu'on ait pas choisir l'attaque de l'enemi
-{
-	if (numberAttaque == 1)
-	{
-		printf("le monstre attaque avec morsure qui enleve 20 pv au brave \n");
-		printf("pv hero est maintenant de %d", *pvPlayer-20);
-		return affichageMonstre(*pvEnnemi);
-	}
-	else if (numberAttaque == 2)
-	{
-		printf("le monstre attaque avec griffe qui enleve 30 pv au brave \n");
-		printf("pv hero est maintenant de %d", *pvPlayer-30);
-		return affichageMonstre(*pvEnnemi);
-	}
-	else if (numberAttaque == 3)
-	{
-		printf("le monstre utilise regeneration point de vie qui ajoute 25 pv à son account \n");
-		printf("pv Moonstre est maintenant de %d", *pvEnnemi+25);
-		return affichageMonstre(*pvEnnemi);
-	}
-	else if (numberAttaque == 4)
-	{
-		printf("le monstre a raté son attaque \n");
-		printf("pv hero est maintenant de %d", *pvPlayer);
-		return affichageMonstre(*pvEnnemi);
-	}
 
-}
+// je vais aussi appeler un struct phrase pour augmenter l'interaction des ennemis durant les combats
+void Phrase (){
+    Conversations Ennemi1;
+    Conversations Ennemi2;
+    //Conversations Ennemi3; si jamais il ny a un ennemi 3
+    //Conversations Player; //Pour le player il se peut qu'apres une phrase ennemi, il puisse avoir un scanf de chaque proprietes ennemi
+    // J'appelle les phrases
+    //Ennemi1
+    Ennemi1.phrase1 = "Prepare toi à mourir";// quand on entre dans le mode combat avec l'ennemi 1
+	Ennemi1.phrase2 = "Ta fin est proche";// quand Ennemi1.pv > Player.pv/2
+	Ennemi1.phrase3 = "C'est pas encore terminé";// quand Ennemi1.pv > Player.pv/2
+	Ennemi1.phrase4 = "Game Over"; // quand Player.pv == 0; fin du combat
+	Ennemi1.phrase5 = "Tu n'iras pas loin"; // quand Ennemi.pv == 0; fin du combat
+    //Ennemi2
+    Ennemi2.phrase1 = "Un ennemmi mais pas deux";// quand on entre dans le mode combat avec l'ennemi 1
+	Ennemi2.phrase2 = "Ta fin est proche";// quand Ennemi1.pv > Player.pv/2
+	Ennemi2.phrase3 = "C'est pas encore terminé";// quand Ennemi1.pv > Player.pv/2
+	Ennemi2.phrase4 = "Game Over"; // quand Player.pv == 0; fin du combat
+	Ennemi2.phrase5 = "Tu n'iras pas loin"; // quand Ennemi.pv == 0; fin du combat
 
-void Combat()// pour une attaque aleatoire ennemi
-{
-	affichageMonstre(*pvEnnemi);// on affiche l'enneli pour le mode combat
-	printf("à vous d'attaquer \n");
+
 }
 
+// Generer un nombre entre 1 et 5 et en fonction du nombre nous pourrons permettre une attaque aleatoire apres attaque Player
+int rand(){
+    srand(time(NULL));
+    int nbgen=rand()%4+1;    //entre 1-4
+    printf("%d\n",nbgen);    //teste affichage
+    return nbgen;
+}
+int randomAttaque(random, Personnage){
+
+    if (random == 1){
+        printf("attaque de l'ennemi"); //apres on diminue dans les pvplayer le nombre de vie à diminuer et on reaffiche le mode combat
+        return 1;
+    } else if (random == 2){
+        printf("attaque de l'ennemi"); //apres on diminue dans les pvplayer le nombre de vie à diminuer et on reaffiche le mode combat
+        return 2;
+    } else if(random == 3){
+        printf("attaque de l'ennemi"); //apres on diminue dans les pvplayer le nombre de vie à diminuer et on reaffiche le mode combat
+        return 3;
+    } else if (random == 4){
+        printf("attaque de l'ennemi"); //apres on diminue dans les pvplayer le nombre de vie à diminuer et on reaffiche le mode combat
+        return 4;
+    }
+}
+
+//Mode combat ennemi1
+void Combat (*Player, *Ennemi1){
+    char alternative = "f"; //pour fuire
+    while((*Player).pv == 0 || (*Ennemi1).pv)==0 ||){
+        (*Player).pv -= (*Ennemi1).randomAttaque(rand(), *Ennemi1); //on retranche dans les points de vie joueur, la force du monstre en gros j'appelle la valeur de player et de cette valeur je vais utiliser les points de vie
+        (*Ennemi1).pv -= (*player).randomAttaque(rand(), *Player);
+        /*if (touchejoueur = alternative){
+            break;
+            return Map;
+        }*/
+    }
+
+}
+//Mode combat ennemi2
+void Combat (*Player, *Ennemi2){
+    char alternative = "f"; //pour fuire
+    while((*Player).pv == 0 || (*Ennemi2).pv)==0 ||){
+        (*Player).pv -= (*Ennemi2).randomAttaque(rand(), *Ennemi2); //on retranche dans les points de vie joueur, la force du monstre en gros j'appelle la valeur de player et de cette valeur je vais utiliser les points de vie
+        (*Ennemi2).pv -= (*player).randomAttaque(rand(), *Player);
+        /*if (touchejoueur = alternative){
+            break;
+            return Map;
+        }*/
+    }
+
+}
 
 
-
-
-
-
-
+// Avec la methode struct, il advient de créer une nouvelle fonction ou un fichier combat
 
