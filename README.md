@@ -29,5 +29,3 @@ Repartition des teches :
 		Sauvegarde (à n'importe quel moment du jeu + possibilite de charge une ancienne partie)
 		Plusieurs armes : Caracteristiques differentes)
 		(Mode deux joueurs)
-
-		
