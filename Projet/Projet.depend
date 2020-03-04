@@ -7,28 +7,29 @@
 	<stdio.h>
 	<stdlib.h>
 
-1582621400 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
+1583309443 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"map.h"
 	"player.h"
 	"inventaire.h"
+	<windows.h>
 
-1582621512 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+1582716959 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
 	<stdio.h>
 
 1580209871 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\include\map.h
 
-1582550573 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
+1582716988 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
 
-1582622079 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+1583311583 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	"map.h"
 
-1582111217 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
+1582716828 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
 
 1582109725 source:c:\users\flavi\documents\langage c\projet\projet\chest.c
 	<stdio.h>
@@ -53,9 +54,17 @@
 
 1582107770 c:\users\flavi\documents\langage c\projet\projet\chest.h
 
-1582112864 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
+1583311254 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
 	<string.h>
+	"chest.h"
 
 1582112864 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
 	<string.h>
+
+1583311129 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1583310966 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 

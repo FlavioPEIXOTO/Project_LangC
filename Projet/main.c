@@ -4,15 +4,21 @@
 #include "map.h"
 #include "player.h"
 #include "inventaire.h"
+//#include <fmodex/fmod.h>
+#include <windows.h>
 
-
-//Taille du tableau
-
+void color(int t, int f)
+{
+    HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(H,f*16+t);
+}
 
 int main() //Creation du menu
 {
-    printf("\n \n MAIN MENU\n \n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
+    printf("\t \n \n MAIN MENU\n \n1. Create New Game \n2. Load Saved Game \n3. About \n4. Exit\n");
+    color(3,0);
     printf("Type 1, 2, 3, or 4\n");
+    color(7,0);
 
     /*SDL_Event event;
     printf("help type h");
@@ -28,9 +34,10 @@ int main() //Creation du menu
     if (choix == 1)
     {
         printf("Please enter your name\n");
+        color(9,0);
         scanf("%s", &name);
+        color(7,0);
         printf("You are in a forest surronded by trees %s\n ", name);
-
         int m[10][10];
         map(m,10,10);
         player(m);
@@ -44,7 +51,8 @@ int main() //Creation du menu
     else if (choix == 3)
     {
         printf("Les regles\n");
-        printf("Presentation de l'equipe");
+        printf("Presentation de l'equipe\n");
+        main();
     }
 
     else if (choix == 4)
