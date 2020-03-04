@@ -9,13 +9,12 @@ struct Object
     int Nbr;
 };
 
-Object* declareObject(int nbr_life_pot)
+Object* declareObject()
 {
     Object tbl[10];
 
     Object LifePotion;
     LifePotion.value = 10;
-    LifePotion.Nbr = nbr_life_pot;
     strcpy(LifePotion.name,"Potion de vie");
     tbl[0] = LifePotion;
 
@@ -28,7 +27,7 @@ Object* declareObject(int nbr_life_pot)
     Object Sword;
     Sword.value = -30;
     Sword.Nbr = 1;
-    strcpy(Sword.name,"Épée");
+    strcpy(Sword.name,"Ã‰pÃ©e");
     tbl[2] = Sword;
 
     return tbl;
