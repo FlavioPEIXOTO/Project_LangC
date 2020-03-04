@@ -1,13 +1,13 @@
 #include <stdio.h>
 int i; // Lignes
 int j;
-int map(int (*tableau)[10], int height, int width) //Création de la liste bidimensionnel
+void map(int tableau[10][10], int height, int width) //Création de la liste bidimensionnel
 {
 
-    for (i = 0 ; i < 10 ; i++)
+    for (i = 0 ; i < height ; i++)
     {
          // Colonnes
-        for (j = 0 ; j < 10 ; j++)
+        for (j = 0 ; j < width ; j++)
         {
             tableau[i][j] = 0;
             // Player = 1
@@ -22,9 +22,22 @@ int map(int (*tableau)[10], int height, int width) //Création de la liste bidime
             tableau [5][9] = 5;
             printf(" %d  | ", tableau[i][j]);
         }
-
         printf("\n");
     }
-    return *tableau[10], height, width;
+    //return *tableau[10];//, height, width;
 }
 
+void affiche (int tableau[10][10], int height, int width)
+{
+    //printf(" %d  | ", tableau[height][width]);
+   // printf(" %d  | ", tableau[i][j]);
+    for (i = 0 ; i < height ; i++)
+    {
+         // Colonnes
+        for (j = 0 ; j < width ; j++)
+        {
+            printf(" %d  | ", tableau[i][j]);
+        }
+        printf("\n");
+    }
+}
