@@ -61,10 +61,44 @@
 1582112864 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
 	<string.h>
 
+<<<<<<< HEAD
 1583311129 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
 1583310966 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
+=======
+1582186552 source:d:\personnel\professionel\project_langc\projet\inventaire.c
+	<string.h>
+
+1582703222 source:d:\personnel\professionel\project_langc\projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"map.h"
+	"player.h"
+	"inventaire.h"
+
+1582703222 d:\personnel\professionel\project_langc\projet\map.h
+
+1582714309 d:\personnel\professionel\project_langc\projet\player.h
+
+1582186552 d:\personnel\professionel\project_langc\projet\inventaire.h
+	<string.h>
+
+1582703222 source:d:\personnel\professionel\project_langc\projet\map.c
+	<stdio.h>
+
+1582703222 source:d:\personnel\professionel\project_langc\projet\player.c
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	"map.h"
+
+1582186552 source:d:\personnel\professionel\project_langc\projet\chest.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+>>>>>>> 44428ffc12be514cfc16b4f2f69ba0dd087a66c9
 
