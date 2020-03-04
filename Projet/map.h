@@ -1,2 +1,4 @@
 //Création de la map
-int map(int (*tableau)[10],int height, int width);
+void map(int tableau[10][10],int height, int width);
+//affichage map
+void affiche (int tableau[10][10], int height, int width);
