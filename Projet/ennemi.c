@@ -4,7 +4,7 @@
 #include <time.h>;  // pour rand
 
 //l'affichage du mode combat
-int affichageMonstre1(Personnage){
+int affichageMonstre1(Personnage personnage){
     printf("            /\---/\ \n");
 	printf("           (       ) \n");
 	printf("           ( @---@ ) \n");
