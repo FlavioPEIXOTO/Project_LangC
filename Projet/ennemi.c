@@ -140,7 +140,7 @@ void Combat (Personnage *Player, Personnage *Ennemi1, int alternative){
         //Sinon l'ennemi attaque avec une attaque aleatoire et si son attaque retranche dans la vie de l'heros
        (*Player).pv -= Ennemi1.randomAttaque(aleatoireNumber(), (*Ennemi1)); //on retranche dans les points de vie joueur, la force du monstre en gros j'appelle la valeur de player et de cette valeur je vais utiliser les points de vie
        //Si Vie Ennemi <=0, on met game over sinon on continue le combat
-       if ((*Player).pv <= 0)
+       if ((*Player).pv <= 0) //
        {
             printf("Ennemi Destroy");
             return map();//retourner à la map avec les pv actuels du joueur
