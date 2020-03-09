@@ -37,7 +37,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="chest.h" />
-		<Unit filename="ennemi.h" />
 		<Unit filename="inventaire.c">
 			<Option compilerVar="CC" />
 		</Unit>

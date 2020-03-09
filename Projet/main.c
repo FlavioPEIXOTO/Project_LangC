@@ -37,10 +37,14 @@ int main() //Creation du menu
         color(9,0);
         scanf("%s", &name);
         color(7,0);
+        int pv_player = 100;
         printf("You are in a forest surronded by trees %s\n ", name);
         int m[10][10];
         map(m,10,10);
-        player(m);
+        while (pv_player!=0)
+        {
+            player(m);
+        }
     }
 
     else if (choix == 2)
