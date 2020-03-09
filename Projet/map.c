@@ -11,9 +11,9 @@ void map(int tableau[10][10], int height, int width) //Création de la liste bidi
         {
             tableau[i][j] = 0;
             // Player = 1
-            tableau [0][0] = 1;
+            tableau [9][0] = 1;
             //Monstres = 2
-            tableau [2][1] = 2; tableau [4][3] = 2;
+            tableau [2][1] = 2; tableau [4][3] = 2;tableau [1][8] = 2; tableau [2][8] = 2; tableau [7][7] = 2;tableau [6][4] = 2; tableau [1][1] = 2; tableau [3][8] = 2;
             // Coffres = 3
             tableau [1][2] = 3;
             // Enigmes = 4
