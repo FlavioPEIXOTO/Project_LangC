@@ -2,7 +2,51 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
+<<<<<<< HEAD
 	<File name="chest.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="player.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="714" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ennemi.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="148" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="map.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="75" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="player.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="365" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="222" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="inventaire.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="188" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ennemi.c" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6207" topLine="126" />
+		</Cursor>
+	</File>
+	<File name="map.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="656" topLine="6" />
+=======
+	<File name="chest.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> ff4c1ac7c89a2831028944ad9906d7ec90a89685
 		<Cursor>
 			<Cursor1 position="45" topLine="0" />
 		</Cursor>
@@ -34,7 +78,12 @@
 	</File>
 	<File name="player.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="59" topLine="0" />
+=======
+			<Cursor1 position="146" topLine="0" />
+>>>>>>> 44f04588c91d4c09af48158cb5bdcb4c69d38717
+>>>>>>> ff4c1ac7c89a2831028944ad9906d7ec90a89685
 		</Cursor>
 	</File>
 	<File name="inventaire.c" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
