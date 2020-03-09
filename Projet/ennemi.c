@@ -3,31 +3,6 @@
 #include "player.h"; // là se trouve la structure personneage
 #include <time.h>;  // pour rand
 
-//l'affichage du mode combat
-int affichageMonstre1(Personnage personnage){
-    printf("            /\---/\ \n");
-	printf("           (       ) \n");
-	printf("           ( @---@ ) \n");
-	printf("           (  ___  ) \n");
-	printf("             (   ) \n");
-	printf("  ""======(         )=====""      \n");
-	printf("  ##      (         )     ##      \n");
-	printf("          (  """""" )           \n");
-	printf("          (    #    )    / /   \n");
-	printf("          (  """""" )   / /   \n");
-	printf("          (         )  / /   /n");
-	printf("          (         ) / /   /n");
-	printf("          ~~~~~~~~~~~ /n");
-	printf("           | |   | | /n");
-	printf("           | |   | | /n");
-	printf("           | |   | | /n");
-	printf("           / |   | \ /n");
-	printf("         /___|   |___\ /n");
-	printf(" /n");
-	printf(" /n");
-	printf("Point de vie ennemie %d \n Point de vie Player %d : %s, &Ennemi.pv, Player.pv, Player.name");// print
-}
-
 // Je créer les valeurs ennemis (je ne sais pas si c'est necessaire de les mettre dans une fonction ou non ou les mettre dans la fonction combat
 
 Personnage Player;
@@ -35,6 +10,7 @@ Personnage Ennemi1;
 Personnage Ennemi2;
 // Pour les attaques il se peut que dans la fonction combat, l'ennemi puisse tirer aleatoirement une attaque
 //remplissage des valeurs
+Player.pv = 100;
 // Ennemi1
 Ennemi1.pv = 50;
 Ennemi1.attaque1 = 10;
@@ -57,6 +33,30 @@ Ennemi2.name = "Omar_Simps";
 //Player.defense = ;
 //scanf("%s",&Player.name);//le joueur va entrer le nom de son player
 
+//l'affichage du mode combat
+void affichageMonstre1(){
+    printf("            /\---/\ \n");
+	printf("           (       ) \n");
+	printf("           ( @---@ ) \n");
+	printf("           (  ___  ) \n");
+	printf("             (   ) \n");
+	printf("  ""======(         )=====""      \n");
+	printf("  ##      (         )     ##      \n");
+	printf("          (  """""" )           \n");
+	printf("          (    #    )    / /   \n");
+	printf("          (  """""" )   / /   \n");
+	printf("          (         )  / /   /n");
+	printf("          (         ) / /   /n");
+	printf("          ~~~~~~~~~~~ /n");
+	printf("           | |   | | /n");
+	printf("           | |   | | /n");
+	printf("           | |   | | /n");
+	printf("           / |   | \ /n");
+	printf("         /___|   |___\ /n");
+	printf(" /n");
+	printf(" /n");
+	//printf("Point de vie ennemie %d \n Point de vie Player %d : %s", Ennemi.pv, Player.pv, Player.name);// print
+}
 
 // je vais aussi appeler un struct phrase pour augmenter l'interaction des ennemis durant les combats
 void Phrase (){
@@ -108,7 +108,7 @@ int randomAttaque(random, Personnage){
 //Mode combat ennemi1
 void Combat (*Player, *Ennemi1){
     char alternative = "f"; //pour fuire
-    while((*Player).pv == 0 || (*Ennemi1).pv)==0 ||){
+    while((*Player).pv == 0 || (*Ennemi1).pv)==0){
         (*Player).pv -= (*Ennemi1).randomAttaque(rand(), *Ennemi1); //on retranche dans les points de vie joueur, la force du monstre en gros j'appelle la valeur de player et de cette valeur je vais utiliser les points de vie
         (*Ennemi1).pv -= (*player).randomAttaque(rand(), *Player);
         /*if (touchejoueur = alternative){
@@ -119,9 +119,9 @@ void Combat (*Player, *Ennemi1){
 
 }
 //Mode combat ennemi2
-void Combat (*Player, *Ennemi2){
+void Combat2 (*Player, *Ennemi2){
     char alternative = "f"; //pour fuire
-    while((*Player).pv == 0 || (*Ennemi2).pv)==0 ||){
+    while((*Player).pv == 0 || (*Ennemi2).pv)==0){
         (*Player).pv -= (*Ennemi2).randomAttaque(rand(), *Ennemi2); //on retranche dans les points de vie joueur, la force du monstre en gros j'appelle la valeur de player et de cette valeur je vais utiliser les points de vie
         (*Ennemi2).pv -= (*player).randomAttaque(rand(), *Player);
         /*if (touchejoueur = alternative){
@@ -132,6 +132,4 @@ void Combat (*Player, *Ennemi2){
 
 }
 
-
 // Avec la methode struct, il advient de créer une nouvelle fonction ou un fichier combat
-
