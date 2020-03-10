@@ -4,7 +4,7 @@ void affichageMonstre1(Personnage personnage);
 void Combat (*Player, *Ennemi1);
 void Phrase ();
 */
-void affichageMonstre(*pvEnnemi);
+void affichageMonstre();
 // Deplacement et Combats
 void player (int (*tableau)[10]); //joueur et sa position
 typedef struct Personnage Personnage; // du coup Personnage == struct Personnage
