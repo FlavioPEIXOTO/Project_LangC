@@ -1,5 +1,4 @@
 #include <string.h>
-#include "chest.h"
 
 typedef struct Object Object;
 struct Object
@@ -9,13 +8,10 @@ struct Object
     int Nbr;
 };
 
-Object* declareObject(int nbr_life_pot)
+Object* declareObject(Object* tbl)
 {
-    Object tbl[10];
-
     Object LifePotion;
     LifePotion.value = 10;
-    LifePotion.Nbr = nbr_life_pot;
     strcpy(LifePotion.name,"Potion de vie");
     tbl[0] = LifePotion;
 
@@ -28,31 +24,39 @@ Object* declareObject(int nbr_life_pot)
     Object Sword;
     Sword.value = -30;
     Sword.Nbr = 1;
-    strcpy(Sword.name,"Épée");
+    strcpy(Sword.name,"Epee");
     tbl[2] = Sword;
 
-    return tbl;
-};
-
+}
+int init_inventory(Object* tbl){
+    Object vide;
+    strcpy(vide.name,"vide");
+    vide.value = 0;
+    for (int i = 0;i<10;i++){
+        tbl[i] = vide;
+    }
+}
 //ajout d'un objet dans l'inventaire
-int add_inventory(Object *inventory,Object objet){
+void add_inventory(Object *inventory,Object objet){
     for (int i=0;i<20;i++){
         if (inventory[i].value == 0){
             inventory[i] = objet;
+            return 0;
         }
     }
-    return inventory;
 }
 
-int delete_inventory(Object *inventory,int x){
+void delete_inventory(Object *inventory,int x){
     strcpy(inventory[x].name,"Coucou");
     inventory[x].value=0;
-    return inventory;
 }
 //montrer les objet de l'inventaire
 void show_inventory(Object *inventory){
     for(int i=0;i<20;i++)
     {
+        if (inventory[i].value > -100 && inventory[i].value <100 && inventory[i].value !=0)
+        {
         printf("Nom :%s  Valeur:%d \n",inventory[i].name,inventory[i].value);
+        }
     }
 }

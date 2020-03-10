@@ -20,6 +20,8 @@ void map(int tableau[10][10], int height, int width) //Création de la liste bidi
             tableau [6][7] = 4;
             // BOSS = 5
             tableau [5][9] = 5;
+            // Mur = 9
+            tableau [5][8] = 9; tableau [4][9] = 9; tableau [1][1] = 9; tableau [0][0] = 9; tableau [1][6] = 9; tableau [2][8] = 9; tableau [3][5] = 9; tableau [3][6] = 9; tableau [5][5] = 9;
             printf(" %d  | ", tableau[i][j]);
         }
         printf("\n");
