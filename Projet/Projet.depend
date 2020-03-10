@@ -74,11 +74,11 @@
 
 1583847474 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 
-1583322173 source:d:\personnel\professionel\project_langc\projet\inventaire.c
+1583845787 source:d:\personnel\professionel\project_langc\projet\inventaire.c
 	<string.h>
 	"chest.h"
 
-1583817935 source:d:\personnel\professionel\project_langc\projet\main.c
+1583845787 source:d:\personnel\professionel\project_langc\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -87,23 +87,24 @@
 	"inventaire.h"
 	<windows.h>
 
-1583322173 d:\personnel\professionel\project_langc\projet\map.h
+1583845787 d:\personnel\professionel\project_langc\projet\map.h
 
-1583322173 d:\personnel\professionel\project_langc\projet\player.h
+1583845787 d:\personnel\professionel\project_langc\projet\player.h
 
 1582186552 d:\personnel\professionel\project_langc\projet\inventaire.h
 	<string.h>
 
-1583817935 source:d:\personnel\professionel\project_langc\projet\map.c
+1583845787 source:d:\personnel\professionel\project_langc\projet\map.c
 	<stdio.h>
 
-1582703222 source:d:\personnel\professionel\project_langc\projet\player.c
+1583845787 source:d:\personnel\professionel\project_langc\projet\player.c
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	"map.h"
+	"ennemi.h"
 
-1583322173 source:d:\personnel\professionel\project_langc\projet\chest.c
+1583845787 source:d:\personnel\professionel\project_langc\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -112,13 +113,35 @@
 
 1583758734 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
 
+<<<<<<< HEAD
 1583850417 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
 	<string.h>
 	"inventaire.h"
 
 1583847530 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.h
+=======
+<<<<<<< HEAD
+1583845787 d:\personnel\professionel\project_langc\projet\chest.h
+
+1583850653 d:\personnel\professionel\project_langc\projet\ennemi.h
+
+1583851053 source:d:\personnel\professionel\project_langc\projet\ennemi.c
+	<stdio.h>
+	<stdlib.h>
+	"player.h"
+	<time.h>
+	<string.h>
+=======
+<<<<<<< HEAD
+1583843997 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
+>>>>>>> d9de09f042c87f9b5ddb69d0c59f867a8af4d240
 
 1583322173 d:\personnel\professionel\project_langc\projet\chest.h
+<<<<<<< HEAD
 
 1583322173 9b322dd14a8f6e72cff4b57753eb8b67485be
+=======
+>>>>>>> 4159b322dd14a8f6e72cff4b57753eb8b67485be
+>>>>>>> b489d615c46f2e96e49bd89b61133067acc98ac9
+>>>>>>> d9de09f042c87f9b5ddb69d0c59f867a8af4d240
 
