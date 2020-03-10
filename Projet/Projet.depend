@@ -7,28 +7,31 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583756596 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
+1583844706 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"map.h"
 	"player.h"
 	"inventaire.h"
+	"chest.h"
 	<windows.h>
+	<MMsystem.h>
 
-1583312653 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+1583842919 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
 	<stdio.h>
 
 1580209871 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\include\map.h
 
 1583312653 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
 
-1583759500 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+1583845410 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	"map.h"
-	"ennemi.h"
+	"chest.h"
+	"help.h"
 
 1583756524 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
 
@@ -55,21 +58,20 @@
 
 1582107770 c:\users\flavi\documents\langage c\projet\projet\chest.h
 
-1583311254 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
+1583844468 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
 	<string.h>
-	"chest.h"
 
-1582112864 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
+1583844532 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
 	<string.h>
 
 1582112864 D
 
-1583312617 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
+1583842438 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
-1583312617 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
+1583842081 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 
 1583845787 source:d:\personnel\professionel\project_langc\projet\inventaire.c
 	<string.h>
@@ -110,6 +112,7 @@
 
 1583758734 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
 
+<<<<<<< HEAD
 1583845787 d:\personnel\professionel\project_langc\projet\chest.h
 
 1583850653 d:\personnel\professionel\project_langc\projet\ennemi.h
@@ -120,4 +123,13 @@
 	"player.h"
 	<time.h>
 	<string.h>
+=======
+<<<<<<< HEAD
+1583843997 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
+
+1583766391 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.h
+=======
+1583322173 d:\personnel\professionel\project_langc\projet\chest.h
+>>>>>>> 4159b322dd14a8f6e72cff4b57753eb8b67485be
+>>>>>>> b489d615c46f2e96e49bd89b61133067acc98ac9
 
