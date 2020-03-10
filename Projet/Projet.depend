@@ -73,25 +73,27 @@
 
 1583842081 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 
-1582186552 source:d:\personnel\professionel\project_langc\projet\inventaire.c
+1583322173 source:d:\personnel\professionel\project_langc\projet\inventaire.c
 	<string.h>
+	"chest.h"
 
-1582703222 source:d:\personnel\professionel\project_langc\projet\main.c
+1583817935 source:d:\personnel\professionel\project_langc\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"map.h"
 	"player.h"
 	"inventaire.h"
+	<windows.h>
 
-1582703222 d:\personnel\professionel\project_langc\projet\map.h
+1583322173 d:\personnel\professionel\project_langc\projet\map.h
 
-1582714309 d:\personnel\professionel\project_langc\projet\player.h
+1583322173 d:\personnel\professionel\project_langc\projet\player.h
 
 1582186552 d:\personnel\professionel\project_langc\projet\inventaire.h
 	<string.h>
 
-1582703222 source:d:\personnel\professionel\project_langc\projet\map.c
+1583817935 source:d:\personnel\professionel\project_langc\projet\map.c
 	<stdio.h>
 
 1582703222 source:d:\personnel\professionel\project_langc\projet\player.c
@@ -100,7 +102,7 @@
 	<stdio.h>
 	"map.h"
 
-1582186552 source:d:\personnel\professionel\project_langc\projet\chest.c
+1583322173 source:d:\personnel\professionel\project_langc\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -109,7 +111,11 @@
 
 1583758734 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
 
+<<<<<<< HEAD
 1583843997 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
 
 1583766391 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.h
+=======
+1583322173 d:\personnel\professionel\project_langc\projet\chest.h
+>>>>>>> 4159b322dd14a8f6e72cff4b57753eb8b67485be
 
