@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "map.h"
-#include "ennemi.h"
+#include "chest.h"
+#include "help.h"
+
+//#include "ennemi.h"
 
 //#include "player.h"
 
@@ -10,8 +13,9 @@
 //int width = 10;
 //int move;
 
-void player (int tableau[10][10], int height, int width, int move) //joueur et sa position
+void player (int tableau[10][10], int height, int width, int move, int PotForce, int PotVie) //joueur et sa position
 {
+    int p = -1;
     int x = 0;
     int y = 0;
     int i,j;
@@ -54,8 +58,25 @@ void player (int tableau[10][10], int height, int width, int move) //joueur et s
         {
             printf("lancement du combat\n");
         }
+        //Detection mur
+        if (tableau [x][y+1] == 9)
+        {
+            //Le code a reconnu un mur
+            p = 1;
+        }
         tableau[x][y] = 0;
-        tableau[x][y+1] = 1;
+        tableau [x][y+1] = 1;
+        //affiche(tableau, height, width);
+        //Lorsque le programme reconnait un mur, remise du plateau comme avant la rencontre
+        if (p == 1)
+        {
+            printf("droit dans le mur !!!\n");
+            tableau[x][y+1] = 9;
+            tableau[x][y] = 1;
+            //Remise en fonction de la présence d'aucun mur
+            p == -1;
+        }
+        //Beep(2000,50);
         affiche(tableau, height, width);
         //printf("%ld", strlen(*tableau)[10]);
     }
@@ -66,37 +87,105 @@ void player (int tableau[10][10], int height, int width, int move) //joueur et s
         {
             printf("lancement du combat\n");
         }
+        //Detection mur
+        if (tableau [x+1][y] == 9)
+        {
+            //Le code a reconnu un mur
+            p = 1;
+        }
         tableau[x][y] = 0;
-        tableau[x+1][y] = 1;
+        tableau [x+1][y] = 1;
+        //affiche(tableau, height, width);
+        //Lorsque le programme reconnait un mur, remise du plateau comme avant la rencontre
+        if (p == 1)
+        {
+            printf("droit dans le mur !!!\n");
+            tableau[x+1][y] = 9;
+            tableau[x][y] = 1;
+            //Remise en fonction de la présence d'aucun mur
+            p == -1;
+        }
         affiche(tableau, height, width);
     }
     else if (move == 3)
     {
         printf("test3\n");
+        //Detection ennemis
         if(tableau[x-1][y] == 2 )
         {
             printf("lancement du combat\n");
         }
+        //Detection mur
+        if (tableau [x-1][y] == 9)
+        {
+            //Le code a reconnu un mur
+            p = 1;
+        }
         tableau[x][y] = 0;
         tableau [x-1][y] = 1;
+        //affiche(tableau, height, width);
+        //Lorsque le programme reconnait un mur, remise du plateau comme avant la rencontre
+        if (p == 1)
+        {
+            printf("droit dans le mur !!!\n");
+            tableau[x-1][y] = 9;
+            tableau[x][y] = 1;
+            //Remise en fonction de la présence d'aucun mur
+            p == -1;
+        }
         affiche(tableau, height, width);
     }
     else if (move == 4)
     {
         printf("test4\n");
+        //Detection ennemis
         if(tableau[x][y-1] == 2 )
         {
             printf("lancement du combat\n");
         }
+        if (tableau [x][y-1] == 9)
+        {
+            //Le code a reconnu un mur
+            p = 1;
+        }
         tableau[x][y] = 0;
-        tableau[x][y-1] = 1;
+        tableau [x][y-1] = 1;
+        //affiche(tableau, height, width);
+        //Lorsque le programme reconnait un mur, remise du plateau comme avant la rencontre
+        if (p == 1)
+        {
+            printf("droit dans le mur !!!\n");
+            tableau[x][y-1] = 9;
+            tableau[x][y] = 1;
+            //Remise en fonction de la présence d'aucun mur
+            p == -1;
+        }
         affiche(tableau, height, width);
+    }
+    else if (move == 6)
+    {
+        help();
     }
     else if (move == 7)
     {
         printf("Ouverture de l'inventaire : \n");
         //inventory();
     }
+    else if (move == 8) //Ajout de potion
+    {
+        MorePotiondeSoin(PotVie);
+        //printf("%d\n", PotVie);
+    }
+
+    else if (move == 9) //consommation de potion
+    {
+        LessPotiondeSoin(PotVie);
+    }
+    /*
+    else if (move == 5)
+    {
+        exit();
+    }*/
     else {
             printf("test_final\n");
     //printf ("%d | ", tableau[x][y]);
