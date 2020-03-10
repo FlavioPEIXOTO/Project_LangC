@@ -7,7 +7,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583844706 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
+1583850928 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -18,22 +18,23 @@
 	<windows.h>
 	<MMsystem.h>
 
-1583842919 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+1583847485 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
 	<stdio.h>
 
 1580209871 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\include\map.h
 
 1583312653 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
 
-1583845410 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+1583851769 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	"map.h"
 	"chest.h"
 	"help.h"
+	"inventaire.h"
 
-1583756524 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
+1583849595 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
 
 1582109725 source:c:\users\flavi\documents\langage c\projet\projet\chest.c
 	<stdio.h>
@@ -58,20 +59,20 @@
 
 1582107770 c:\users\flavi\documents\langage c\projet\projet\chest.h
 
-1583844468 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
+1583851863 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
 	<string.h>
 
-1583844532 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
+1583850417 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
 	<string.h>
 
-1582112864 D
+1583758734 D
 
-1583842438 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
+1583847474 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
-1583842081 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
+1583847474 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 
 1583322173 source:d:\personnel\professionel\project_langc\projet\inventaire.c
 	<string.h>
@@ -111,11 +112,13 @@
 
 1583758734 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
 
-<<<<<<< HEAD
-1583843997 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
+1583850417 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
+	<string.h>
+	"inventaire.h"
 
-1583766391 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.h
-=======
+1583847530 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.h
+
 1583322173 d:\personnel\professionel\project_langc\projet\chest.h
->>>>>>> 4159b322dd14a8f6e72cff4b57753eb8b67485be
+
+1583322173 9b322dd14a8f6e72cff4b57753eb8b67485be
 

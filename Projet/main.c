@@ -33,11 +33,8 @@ int main() //Creation du menu
 
     int choix;
     char name[20];
+    //declareObject(tbl_obj);
     scanf("%d", &choix);
-    Object tbl_obj[20];
-    Object inventory[10];
-    declareObject(tbl_obj);
-    show_inventory(tbl_obj);
     if (choix == 1)
     {
         printf("Please enter your name\n");
@@ -51,12 +48,14 @@ int main() //Creation du menu
         printf("You are in a forest surronded by trees %s\n ", name);
         int m[10][10];
         map(m,10,10);
+        //Object test[10];
         while (pv_player!=0)
         {
+            //init_inventory(test);
+           // show_inventory(test);
             player(m);
         }
     }
-
     else if (choix == 2)
     {
         printf("Chargement de votre sauvegarde\n");
