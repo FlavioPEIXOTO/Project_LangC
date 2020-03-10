@@ -33,10 +33,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Projet.cbp" />
+		<Unit filename="Projet.depend" />
+		<Unit filename="Projet.layout" />
 		<Unit filename="chest.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="chest.h" />
+		<Unit filename="ennemi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ennemi.h" />
 		<Unit filename="inventaire.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -44,10 +51,12 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="main.o" />
 		<Unit filename="map.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="map.h" />
+		<Unit filename="map.o" />
 		<Unit filename="player.c">
 			<Option compilerVar="CC" />
 		</Unit>
