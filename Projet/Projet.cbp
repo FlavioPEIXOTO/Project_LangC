@@ -33,10 +33,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Linker>
+			<Add option="-lwinmm" />
+		</Linker>
 		<Unit filename="chest.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="chest.h" />
+		<Unit filename="help.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="help.h" />
 		<Unit filename="inventaire.c">
 			<Option compilerVar="CC" />
 		</Unit>

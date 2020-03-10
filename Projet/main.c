@@ -4,8 +4,12 @@
 #include "map.h"
 #include "player.h"
 #include "inventaire.h"
+#include "chest.h"
+//#include <SDL/SDL.h>
+//#include <SDL/SDL_image.h>
 //#include <fmodex/fmod.h>
 #include <windows.h>
+#include<MMsystem.h>
 
 void color(int t, int f)
 {
@@ -30,14 +34,20 @@ int main() //Creation du menu
     int choix;
     char name[20];
     scanf("%d", &choix);
-
+    Object tbl_obj[20];
+    Object inventory[10];
+    declareObject(tbl_obj);
+    show_inventory(tbl_obj);
     if (choix == 1)
     {
         printf("Please enter your name\n");
+        //PlaySound(TEXT("..\\..\\music\\musique1_test.mp3"),NULL,SND_SYNC | SND_LOOP | SND_FILENAME);
+        //PlaySound("C:\\SOUNDS\\musique1_test.mp3",NULL,SND_SYNC);
         color(9,0);
         scanf("%s", &name);
         color(7,0);
         int pv_player = 100;
+        //test();
         printf("You are in a forest surronded by trees %s\n ", name);
         int m[10][10];
         map(m,10,10);
@@ -70,33 +80,5 @@ int main() //Creation du menu
         main();
     }
 
-    return 0;
-}
-
-
-
-int monster () //Si case ennemi , combat lancé (+parametre ennemi)
-{
-    return 0;
-}
-
-int attack () //Si combat, commandes d'attaque (+parametre attaque)
-{
-    return 0;
-}
-
-int coffre () //Si case coffre, objet dans coffre
-{
-    return 0;
-}
-
-int boss () // SI case boss , déclenchement combat (+parametre boss)
-{
-    return 0;
-}
-
-int help ()
-{
-    printf("Type 'help' if you need help");
     return 0;
 }
