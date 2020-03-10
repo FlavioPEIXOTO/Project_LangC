@@ -8,7 +8,7 @@ struct Object
     char name[255];
     int value;
 };
-
+int init_inventory(Object* tbl);
 //ajout d'un objet dans l'inventaire
 int add_inventory(Object *inventory,Object objet);
 
