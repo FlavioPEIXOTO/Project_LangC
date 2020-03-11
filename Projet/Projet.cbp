@@ -33,30 +33,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-<<<<<<< HEAD
-		<Unit filename="Projet.cbp" />
-		<Unit filename="Projet.depend" />
-		<Unit filename="Projet.layout" />
-=======
 		<Linker>
 			<Add option="-lwinmm" />
+			<Add library="../../FMOD Studio API Windows/api/fsbank/lib/x64/fsbank_vc.lib" />
 		</Linker>
->>>>>>> b489d615c46f2e96e49bd89b61133067acc98ac9
 		<Unit filename="chest.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="chest.h" />
-<<<<<<< HEAD
 		<Unit filename="ennemi.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ennemi.h" />
-=======
 		<Unit filename="help.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="help.h" />
->>>>>>> b489d615c46f2e96e49bd89b61133067acc98ac9
 		<Unit filename="inventaire.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -64,12 +56,14 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="main.o" />
 		<Unit filename="map.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="map.h" />
-		<Unit filename="map.o" />
+		<Unit filename="monster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="monster.h" />
 		<Unit filename="player.c">
 			<Option compilerVar="CC" />
 		</Unit>
