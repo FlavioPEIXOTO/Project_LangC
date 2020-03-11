@@ -6,7 +6,7 @@
 
 typedef struct Personnage Personnage; // du coup Personnage == struct Personnage
 
-// Je créer les valeurs ennemis (je ne sais pas si c'est necessaire de les mettre dans une fonction ou non ou les mettre dans la fonction combat
+// Je créer les valeurs ennemis
 struct Personnage {
 	int pv;
 	int attaque1;
