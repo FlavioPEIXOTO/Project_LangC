@@ -8,6 +8,7 @@ struct Object
     int Nbr;
 };
 
+    //Declaration des objets
 Object* declareObject(Object* tbl)
 {
     Object LifePotion;
@@ -50,13 +51,14 @@ void delete_inventory(Object *inventory,int x){
     strcpy(inventory[x].name,"Coucou");
     inventory[x].value=0;
 }
+
 //montrer les objet de l'inventaire
 void show_inventory(Object *inventory){
     for(int i=0;i<20;i++)
     {
         if (inventory[i].value > -100 && inventory[i].value <100 && inventory[i].value !=0)
         {
-        printf("Nom :%s  Valeur:%d \n",inventory[i].name,inventory[i].value);
+        printf("\n Nom :%s  Valeur:%d \n",inventory[i].name,inventory[i].value);
         }
     }
 }
