@@ -7,7 +7,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583938924 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
+1583943474 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -19,14 +19,14 @@
 	<windows.h>
 	<MMsystem.h>
 
-1583931090 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
+1583943474 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.c
 	<stdio.h>
 
 1580209871 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\include\map.h
 
 1583312653 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\map.h
 
-1583935318 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
+1583943350 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.c
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
@@ -38,7 +38,7 @@
 	"monster.h"
 	"ennemi.h"
 
-1583922719 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
+1583943350 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\player.h
 
 1582109725 source:c:\users\flavi\documents\langage c\projet\projet\chest.c
 	<stdio.h>
@@ -63,7 +63,7 @@
 
 1582107770 c:\users\flavi\documents\langage c\projet\projet\chest.h
 
-1583922355 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
+1583943474 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.c
 	<string.h>
 
 1583853427 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\inventaire.h
@@ -71,12 +71,12 @@
 
 1583322173 D
 
-1583932420 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
+1583943332 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
-1583932270 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
+1583943332 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\chest.h
 
 1583845787 source:d:\personnel\professionel\project_langc\projet\inventaire.c
 	<string.h>
@@ -115,9 +115,9 @@
 
 1582186552 28ffc12be514cfc16b4f2f69ba0dd087a66c9
 
-1583933693 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
+1583943342 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.h
 
-1583920089 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
+1583943474 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\help.c
 	<string.h>
 	"inventaire.h"
 
@@ -142,16 +142,17 @@
 
 1583322173 9d615c46f2e96e49bd89b61133067acc98ac9
 
-1583930449 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.c
+1583943342 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\ennemi.c
 	<stdio.h>
 	<stdlib.h>
 	"player.h"
 	<time.h>
 	<string.h>
 
-1583939222 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\monster.c
+1583943342 source:c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\monster.c
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
 
-1583935465 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\monster.h
+1583943342 c:\users\tom\desktop\ynov\c_c++\projet_c_git\projet\monster.h
 
