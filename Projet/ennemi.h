@@ -1,4 +1,3 @@
-
 //typedef struct Object Personnage;
 /*
 void affichageMonstre1(Personnage personnage);
@@ -30,7 +29,6 @@ struct Conversations {
 	char phrase4;
 	char phrase5;
 };
-
 //typedef struct Object Personnage;
 /*
 void affichageMonstre1(Personnage personnage);
